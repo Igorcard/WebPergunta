@@ -7,6 +7,8 @@
   const btnYes = document.getElementById("btn-yes");
   const btnNo = document.getElementById("btn-no");
   const escapeArea = document.getElementById("escape-area");
+  const SUCCESS_VIDEO_URL = "https://www.youtube.com/shorts/fhIR7yTqwbA";
+  const REDIRECT_DELAY_MS = 2000;
 
   let noOffsetX = 0;
   let noOffsetY = 0;
@@ -43,6 +45,10 @@
     successView.hidden = false;
     card.classList.add("card--confirmed");
     card.setAttribute("aria-label", "Resposta confirmada");
+
+    setTimeout(() => {
+      window.location.href = SUCCESS_VIDEO_URL;
+    }, REDIRECT_DELAY_MS);
   }
 
   function handleNoEscape(event) {
