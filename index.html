@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Uma pergunta especial para você">
+  <title>Quer sair comigo?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card" id="card" aria-live="polite">
+      <div class="card__content" id="question-view">
+        <p class="card__eyebrow">Tem um minutinho?</p>
+        <h1 class="card__title">Quer sair comigo?</h1>
+        <p class="card__subtitle">Escolha com o coração 💕</p>
+
+        <div class="actions">
+          <button type="button" class="btn btn--yes" id="btn-yes">
+            Sim
+          </button>
+        </div>
+
+        <div class="escape-area" id="escape-area" aria-label="Área dos botões">
+          <button type="button" class="btn btn--no" id="btn-no">
+            Não
+          </button>
+        </div>
+      </div>
+
+      <div class="card__success" id="success-view" hidden>
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <p class="success-label">confirmado</p>
+        <p class="success-message">Mal posso esperar! 🎉</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
